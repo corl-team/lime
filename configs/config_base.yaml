@@ -1,0 +1,26 @@
+save_path: "/app/cache/"
+num_steps: 20_000
+mixed_precision: "bf16"
+dynamo_backend: "inductor"
+data_config:
+  data_path: "/app/fineweb_edu/"
+  seq_length: 2048
+  num_workers: 8
+model_config:
+  vocab_size: 50257
+  hidden_size: 2048
+  intermediate_size: 8192
+  num_attention_heads: 32
+  num_hidden_layers: 16
+  tie_word_embeddings: true
+  use_cache: false
+lime_config:
+  router_lr: 0.01
+optimizer: "AdamW"
+debug: false
+max_grad_norm: 1.0
+wrapper_patch: true
+model_type: 'lime'
+batch_size_per_device: 4
+seed: 42
+model_name: "HuggingFaceFW/ablation-model-fineweb-edu"

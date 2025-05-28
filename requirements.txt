@@ -1,0 +1,14 @@
+accelerate==1.6.0
+datasets==3.5.0
+tokenizers==0.21.1
+transformers==4.51.1
+lighteval==0.8.1
+einops==0.8.1
+opt-einsum==3.4.0
+fvcore==0.1.5.post20221221
+wandb
+ninja
+prettytable
+lion-pytorch
+pyrallis
+packaging
